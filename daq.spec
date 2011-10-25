@@ -1,12 +1,12 @@
 
 Summary:	Data Acquisition Library
 Name:		daq
-Version:	0.6.1
+Version:	0.6.2
 Release:	1
 License:	GNU General Public License
 Group:		Networking
-Source0:	daq-%{version}.tar.gz
-# Source0-md5:	54ed07a9e903512260fbc30f902748fd
+Source0:	http://www.snort.org/dl/snort-current/daq-%{version}.tar.gz
+# Source0-md5:	6ea8aaa6f067f8b8ef6de45b95d55875
 URL:		http://www.snort.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
