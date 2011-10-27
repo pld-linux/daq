@@ -5,16 +5,16 @@ Version:	0.6.2
 Release:	1
 License:	GNU General Public License
 Group:		Networking
-Source0:	http://www.snort.org/dl/snort-current/daq-%{version}.tar.gz
+Source0:	http://www.snort.org/dl/snort-current/%{name}-%{version}.tar.gz
 # Source0-md5:	6ea8aaa6f067f8b8ef6de45b95d55875
 URL:		http://www.snort.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	flex
 BuildRequires:	bison
-BuildRequires:	libpcap-devel >= 1.0.0
+BuildRequires:	flex
 BuildRequires:	libdnet-devel
 BuildRequires:	libnetfilter_queue-devel
+BuildRequires:	libpcap-devel >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*.h
 %{_libdir}/daq
 %{_libdir}/daq/daq_*.so
-%{_libdir}/lib*.so*
+%attr(755,root,root) %{_libdir}/lib*.so*
 %{_libdir}/lib*.a
 %{_libdir}/lib*.la
 %attr(755,root,root) %{_bindir}/daq-modules-config
