@@ -56,7 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_includedir}/*.h
 %{_libdir}/daq
-%{_libdir}/daq/daq_*.so
 %attr(755,root,root) %{_libdir}/lib*.so*
 %{_libdir}/lib*.a
 %{_libdir}/lib*.la
